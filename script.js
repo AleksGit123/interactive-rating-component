@@ -1,12 +1,29 @@
 "use strict"
 
-let num1 = document.querySelector(".num1");
-let num2 = document.querySelector(".num2");
-let num3 = document.querySelector(".num3");
-let num4 = document.querySelector(".num4");
-let num5 = document.querySelector(".num5");
+let numbers = document.querySelectorAll(".rate_button");
+let star = document.querySelector(".star");
 
+numbers.forEach(button => {
+   button.addEventListener("click", () => {
+    star.classList.remove("animation");
 
-num1.addEventListener("mouseover",() =>{
+    void star.offsetWidth;
+
+    star.classList.add("animation");
     
-})
+   })
+});
+
+
+
+// star.addEventListener("animationend", () => {
+//     setTimeout(() => {
+//         star.classList.remove("animation")
+//     },100)
+// });
+
+
+
+
+
+

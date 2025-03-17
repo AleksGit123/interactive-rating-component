@@ -34,20 +34,24 @@ body {
 
 .star {
     font-size: 36px;
-    filter: drop-shadow(0 0 2px);
-    /* animation: rotate .5s 1 forwards; */
+
 }
 
-/* 
+.animation {
+    animation: rotate .7s 1 forwards;
+}
+
+
 @keyframes rotate {
     from {
-        transform:translateY(0) rotate(0deg);
+        transform: translateY(0) rotate(0deg);
     }
 
     to {
-        transform: translateY(-5px) rotate(360deg);
+        transform: translateY(-15px) rotate(360deg);
+        text-shadow: 0 8px 5px #333d4c;
     }
-} */
+}
 
 /* section1 */
 .text_section {
@@ -90,18 +94,40 @@ body {
     transition: all .4s;
     position: relative;
     overflow: hidden;
-
+    transition: .4s;
 }
 
 .rate_button::before {
     content: "";
     display: block;
     position: absolute;
-    top: 0;
+    top: 100%;
     width: 100%;
-    height: 80%;
-    background-color: red;
+    height: 100%;
+    background-color: #e68226;
+    transition: all .5s;
     z-index: 0;
+}
+
+
+.num1:hover::before {
+    top: 80%;
+}
+
+.num2:hover::before {
+    top: 65%;
+}
+
+.num3:hover::before {
+    top: 45%;
+}
+
+.num4:hover::before {
+    top: 25%;
+}
+
+.num5:hover::before {
+    top: 0;
 }
 
 .numbers {
