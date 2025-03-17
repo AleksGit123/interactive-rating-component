@@ -1,7 +1,10 @@
 "use strict"
 
+let rate = document.querySelector(".rate");
+let thanks = document.querySelector(".thanks");
 let numbers = document.querySelectorAll(".rate_button");
 let star = document.querySelector(".star");
+let submitButton = document.querySelector(".submit_button");
 
 numbers.forEach(button => {
    button.addEventListener("click", () => {
@@ -16,11 +19,12 @@ numbers.forEach(button => {
 
 
 
-// star.addEventListener("animationend", () => {
-//     setTimeout(() => {
-//         star.classList.remove("animation")
-//     },100)
-// });
+submitButton.addEventListener("click", () =>{
+    rate.classList.add("hidden");
+    thanks.classList.remove("hidden");
+})
+
+
 
 
 
